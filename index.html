@@ -47,13 +47,13 @@
         var video = document.getElementById("video");
         if (Hls.isSupported()) {
           var hls = new Hls();
-          hls.loadSource("https://top2new.iosplayer.ru/top2/eplayerskycric/mono.m3u8");
+          hls.loadSource("https://001.fclplayer.online/live/csstream1/playlist.m3u8?id=1001&pk=bfd0ebe3a76b464fe38be854f7efe9763d3bdd905a49472f7678c5067def3419");
           hls.attachMedia(video);
           hls.on(Hls.Events.MANIFEST_PARSED, function () {
             video.play();
           });
         } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-          video.src = "https://top2new.iosplayer.ru/top2/eplayerskycric/mono.m3u8";
+          video.src = "https://001.fclplayer.online/live/csstream1/playlist.m3u8?id=1001&pk=bfd0ebe3a76b464fe38be854f7efe9763d3bdd905a49472f7678c5067def3419";
           video.addEventListener("canplay", function () {
             video.play();
           });
