@@ -47,13 +47,13 @@
         var video = document.getElementById("video");
         if (Hls.isSupported()) {
           var hls = new Hls();
-          hls.loadSource("https://yosintv3.github.io/livee/prime.html");
+          hls.loadSource("https://sedgbvx2.protect-hls.net/live/m3-index.m3u8");
           hls.attachMedia(video);
           hls.on(Hls.Events.MANIFEST_PARSED, function () {
             video.play();
           });
         } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-          video.src = "https://yosintv3.github.io/livee/prime.html";
+          video.src = "https://sedgbvx2.protect-hls.net/live/m3-index.m3u8";
           video.addEventListener("canplay", function () {
             video.play();
           });
