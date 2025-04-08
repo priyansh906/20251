@@ -48,7 +48,7 @@
         if (Hls.isSupported()) {
           var hls = new Hls();
           hls.loadSource(
-            "https://funn-g1163.huibo.tv/GE/H15/chunks.m3u8?p=46&cf=1742997600&d=&ip=126.115.249.216&e=1749998200&h=b1ede91b7df9b6cdae13da19379abefb"
+            "https://s1.yuvraj.fun/sky-sp-cric/index.m3u8"
           );
           hls.attachMedia(video);
           hls.on(Hls.Events.MANIFEST_PARSED, function () {
@@ -56,7 +56,7 @@
           });
         } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
           video.src =
-            "https://funn-g1163.huibo.tv/GE/H15/chunks.m3u8?p=46&cf=1742997600&d=&ip=126.115.249.216&e=1749998200&h=b1ede91b7df9b6cdae13da19379abefb";
+            "https://s1.yuvraj.fun/sky-sp-cric/index.m3u8";
           video.addEventListener("canplay", function () {
             video.play();
           });
