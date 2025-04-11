@@ -34,6 +34,7 @@
         justify-content: center;
         align-items: center;
         background-color: black;
+        position: relative;
       }
       #video {
         width: 100%;
@@ -49,12 +50,14 @@
         background-color: rgba(0, 0, 0, 0.5);
         padding: 5px 10px;
         border-radius: 5px;
+        z-index: 10;
       }
     </style>
   </head>
   <body>
     <div id="video-container">
       <video id="video" controls></video>
+      <div id="text-below">www.rhinoarena.com</div>
     </div>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
